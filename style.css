@@ -1,0 +1,115 @@
+*{
+     box-sizing: border-box;
+     text-transform: capitalize;
+     font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(234, 230, 221);
+    color: rgb(142, 114, 43);
+}
+
+
+section{
+    width: calc(100% - 10%);
+    min-height: calc(100vh - 10%);
+    margin: 36px auto;
+}
+section header{
+    text-align: center;
+}
+section header .title{
+    font-weight: bold;
+}
+section header .subtitle{
+    position: relative;
+    top: -10px;
+    font-size: 17px;
+}
+
+
+
+section .conteiner{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+ 
+.box{
+    border: 1px solid  rgb(172, 134, 40);
+    width: 300px;
+    background-color: rgb(203, 198, 183);
+    box-shadow: 2px 4px 7px black;
+    padding: 20px;
+    transition: all ease-in .5s;
+    margin-top: 30px;
+}
+
+.box img{
+     border-radius: 30px;
+     box-shadow: 2px 4px 7px dimgray ;
+}
+
+.box button{
+    background-color: #ddd;
+    padding: 6px 14px;
+    outline: 0;
+    border: 1px solid rgb(183, 165, 64);
+    border-radius: 8px;
+}
+section .conteiner .box1{
+    background-color: rgb(170, 46, 46);
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+}
+section .conteiner .box1:hover{
+     box-shadow: 3px 3px 7px red;
+}
+
+
+section .conteiner .box:hover{
+    background-image: url("download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ddd;
+    transition: all ease-in .9s;
+}
+.conteiner .box h1 p{
+    text-align: center;
+}
+section .conteiner .box button:hover{
+    background-color: brown;
+    color: aliceblue;
+    transition: all ease-in .4s;
+    cursor: pointer;
+}
+
+.box{
+    min-height: 400px;
+    border-radius: 30px;
+}
+
+.box p{
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:968px) { 
+     section .conteiner{
+        display: grid;
+        grid-template-columns: auto auto;
+     }
+}
+
+@media screen and (max-width:600px) {
+       section .conteiner{
+        display: grid;
+        grid-template-columns: auto;
+     }
+   
+
+
+ }
